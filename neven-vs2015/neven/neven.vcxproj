@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F65E42E-B91F-4938-85C2-BE9EBB0D6F34}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>neven</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>neven</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\embedded\common\src;..\..\FaceRecEm\common\src</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\embedded\common\src;..\..\FaceRecEm\common\src</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\embedded\common\src;..\..\FaceRecEm\common\src</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\embedded\common\src;..\..\FaceRecEm\common\src</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);WIN32; btk_EXPORTING</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions);WIN32; btk_EXPORTING</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);WIN32; btk_EXPORTING</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);WIN32; btk_EXPORTING</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Embedded\common\conf\b_BasicEm\LibConfig.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\BFFaceFinder.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\DCR.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\FaceFinder.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\FaceFinderRef.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\Functions.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\Types.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\APh.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\APhArr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Basic.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Complex.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\ComplexArr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Config.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Context.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\DynMemManager.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Functions.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Int16Arr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Int32Arr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Int8Arr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Math.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Memory.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\MemSeg.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\MemTbl.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Phase.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\String.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\UInt16Arr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\UInt32Arr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\UInt8Arr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\BitParam.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Feature.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Functions.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x2Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Tld2x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Dns2x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld1x1Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld2x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x2Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns3x3Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Tld2x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns3x3Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns4x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L06DnsNx4x4Ftr.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanDetector.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanner.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\ScanDetector.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Scanner.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Sequence.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\APhImage.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\ComplexImage.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\Flt16Image.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\Functions.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\HistoEq.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt16ByteImage.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt16BytePyrImage.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt32Image.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt8Image.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt8PyramidalImage.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Alt.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Cluster2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Cluster3D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\CompactAlt.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\CompactMat.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt3D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat3D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec3D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Functions.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\IdCluster2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Mat2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Rect.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec3D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int32Mat.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\MapSequence.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Mat.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Normalizer.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\RBFMap2D.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\SubVecMap.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Uint32Rect.h" />
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\VectorMap.h" />
+    <ClInclude Include="..\..\FaceRecEm\common\src\b_FDSDK\SDK.h" />
+    <ClInclude Include="..\..\neven.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\BFFaceFinder.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\DCR.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\FaceFinder.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\FaceFinderRef.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\Functions.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\APh.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\APhArr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Complex.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\ComplexArr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Context.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\DynMemManager.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Functions.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Int16Arr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Int32Arr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Int8Arr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Math.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\MathSSE2.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Memory.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\MemSeg.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\MemTbl.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Phase.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\String.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\UInt16Arr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\UInt32Arr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\UInt8Arr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\BitParam.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Feature.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Functions.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x2Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Tld2x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Dns2x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld1x1Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld2x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x2Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns3x3Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Tld2x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns3x3Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns4x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L06DnsNx4x4Ftr.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanDetector.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanner.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\ScanDetector.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Scanner.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Sequence.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\APhImage.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\ComplexImage.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\Flt16Image.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\Functions.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\HistoEq.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt16ByteImage.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt16BytePyrImage.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt32Image.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt8Image.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt8PyramidalImage.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Alt.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Cluster2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Cluster3D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\CompactAlt.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\CompactMat.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt3D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat3D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec3D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Functions.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\IdCluster2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Mat2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Rect.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec3D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int32Mat.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\MapSequence.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Mat.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Normalizer.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\RBFMap2D.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\SubVecMap.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Uint32Rect.c" />
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\VectorMap.c" />
+    <ClCompile Include="..\..\FaceRecEm\common\src\b_FDSDK\DCR.c" />
+    <ClCompile Include="..\..\FaceRecEm\common\src\b_FDSDK\FaceFinder.c" />
+    <ClCompile Include="..\..\FaceRecEm\common\src\b_FDSDK\SDK.c" />
+    <ClCompile Include="..\..\neven.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

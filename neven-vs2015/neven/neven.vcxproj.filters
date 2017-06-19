@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\FaceRecEm">
+      <UniqueIdentifier>{a99b5860-7b62-40e7-9f15-0519016f06ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Embedded">
+      <UniqueIdentifier>{12c8c44f-efc7-4c88-9940-6e5a06b8c857}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Embedded\common\conf\b_BasicEm\LibConfig.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\BFFaceFinder.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\DCR.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\FaceFinder.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\FaceFinderRef.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\Functions.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_APIEm\Types.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\APh.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\APhArr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Basic.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Complex.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\ComplexArr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Config.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Context.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\DynMemManager.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Functions.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Int16Arr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Int32Arr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Int8Arr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Math.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Memory.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\MemSeg.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\MemTbl.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\Phase.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\String.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\UInt16Arr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\UInt32Arr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BasicEm\UInt8Arr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\BitParam.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Feature.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Functions.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x2Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Tld2x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Dns2x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld1x1Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld2x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x2Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns3x3Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Tld2x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns3x3Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns4x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\L06DnsNx4x4Ftr.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanDetector.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanner.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\ScanDetector.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Scanner.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_BitFeatureEm\Sequence.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\APhImage.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\ComplexImage.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\Flt16Image.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\Functions.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\HistoEq.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt16ByteImage.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt16BytePyrImage.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt32Image.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt8Image.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_ImageEm\UInt8PyramidalImage.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Alt.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Cluster2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Cluster3D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\CompactAlt.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\CompactMat.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt3D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat3D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec3D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Functions.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\IdCluster2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Mat2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Rect.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec3D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Int32Mat.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\MapSequence.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Mat.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Normalizer.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\RBFMap2D.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\SubVecMap.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\Uint32Rect.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Embedded\common\src\b_TensorEm\VectorMap.h">
+      <Filter>源文件\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FaceRecEm\common\src\b_FDSDK\SDK.h">
+      <Filter>源文件\FaceRecEm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\neven.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\BFFaceFinder.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\DCR.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\FaceFinder.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\FaceFinderRef.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_APIEm\Functions.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\APh.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\APhArr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Complex.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\ComplexArr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Context.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\DynMemManager.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Functions.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Int16Arr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Int32Arr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Int8Arr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Math.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\MathSSE2.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Memory.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\MemSeg.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\MemTbl.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\Phase.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\String.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\UInt16Arr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\UInt32Arr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BasicEm\UInt8Arr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\BitParam.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Feature.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Functions.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x2Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Dns2x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\I04Tld2x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Dns2x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld1x1Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L01Tld2x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x2Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns2x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Dns3x3Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L04Tld2x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns3x3Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L06Dns4x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\L06DnsNx4x4Ftr.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanDetector.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\LocalScanner.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\ScanDetector.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Scanner.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_BitFeatureEm\Sequence.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\APhImage.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\ComplexImage.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\Flt16Image.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\Functions.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\HistoEq.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt16ByteImage.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt16BytePyrImage.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt32Image.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt8Image.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_ImageEm\UInt8PyramidalImage.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Alt.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Cluster2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Cluster3D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\CompactAlt.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\CompactMat.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Alt3D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Mat3D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Flt16Vec3D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Functions.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\IdCluster2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Mat2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Rect.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int16Vec3D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Int32Mat.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\MapSequence.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Mat.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Normalizer.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\RBFMap2D.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\SubVecMap.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\Uint32Rect.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Embedded\common\src\b_TensorEm\VectorMap.c">
+      <Filter>源文件\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\neven.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FaceRecEm\common\src\b_FDSDK\SDK.c">
+      <Filter>源文件\FaceRecEm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FaceRecEm\common\src\b_FDSDK\FaceFinder.c">
+      <Filter>源文件\FaceRecEm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FaceRecEm\common\src\b_FDSDK\DCR.c">
+      <Filter>源文件\FaceRecEm</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

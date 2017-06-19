@@ -1,0 +1,9 @@
+*.obj
+*.vs/*
+*Debug/*
+*Release/*
+x64/*
+*.db
+*.dll
+*.log
+*.tlog
