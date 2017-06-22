@@ -16,10 +16,15 @@ void load_image(char *file, void **buffer, int *width, int *height)
 void draw_face(struct neven_face* face)
 {
 	CvPoint pt1, pt2;
-	pt1.x = (int)(face->midpointx - face->eyedist/2.0);
-	pt1.y = (int)(face->midpointy - face->eyedist/2.0);
-	pt2.x = (int)(face->midpointx + face->eyedist/2.0);
-	pt2.y = (int)(face->midpointy + face->eyedist/2.0);
+	//pt1.x = (int)(face->midpointx - face->eyedist/2.0);
+	//pt1.y = (int)(face->midpointy - face->eyedist/2.0);
+	//pt2.x = (int)(face->midpointx + face->eyedist/2.0);
+	//pt2.y = (int)(face->midpointy + face->eyedist/2.0);
+	pt1.x = (int)(face->midpointx - face->eyedist * 2.0);
+	pt1.y = (int)(face->midpointy - face->eyedist * 2.0);
+	pt2.x = (int)(face->midpointx + face->eyedist * 2.0);
+	pt2.y = (int)(face->midpointy + face->eyedist * 2.0);
+
 	cvRectangle(image, pt1, pt2, cvScalar(255, 255, 0, 0), 3, 8, 0);
 }
 
@@ -33,8 +38,13 @@ int main(int argc, char * argv[])
 		printf("Usage: ./test img_file desc_file\n");
 		return 1;
 	}
+
+	printf("Load image %s\n", argv[1]);
+	
 	max_faces = 150;
 	load_image(argv[1], &buffer, &width, &height);
+
+	printf("Load detection model %s\n", argv[2]);
 
 	struct neven_env *env = neven_create(argv[2], width, height, max_faces);
 	int num_faces = neven_detect(env, buffer);
@@ -43,11 +53,18 @@ int main(int argc, char * argv[])
 	{
 		struct neven_face face;
 		neven_get_face(env, &face, i);
-		printf("face %d is at (%f, %f)\n", i, face.midpointx, face.midpointy);
+		printf("face %d is at center: (%f, %f)\n", i, face.midpointx, face.midpointy);
 		draw_face(&face);
 	}
+
+	if (num_faces < 1)
+	{
+		printf("No faces detected!\n");
+	}
+
 	neven_destroy(env);
 
+	cvNamedWindow("result", 0);
 	cvShowImage("result", image);
 	cvWaitKey(0);
 	cvSaveImage("result.jpg", image, 0);

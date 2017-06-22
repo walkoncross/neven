@@ -4,6 +4,8 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
+#include <io.h>
+
 #include "neven.h"
 
 #define LOGE printf
@@ -16,6 +18,26 @@ static void *malloc32(u32 size) {
 struct neven_env *neven_create(const char *descfile, int w, int h, int maxFaces) {
 	const int MAX_FILE_SIZE = 65536;
 	void* initData = malloc( MAX_FILE_SIZE ); /* enough to fit entire file */
+#ifdef WIN32
+	FILE* fp = fopen(descfile, "r");
+	if (!fp) {
+		LOGE("ERROR: unable to load describe file\n");
+		return NULL;
+	}
+	fseek(fp, 0, SEEK_END);
+
+	int initDataSize = ftell(fp);
+	//fread(initData, 1, initDataSize, fp);
+	fclose(fp);
+
+	int filedesc = open(descfile, O_RDONLY);
+	if (filedesc == -1) {
+		LOGE("ERROR: unable to load describe file\n");
+		return NULL;
+	}
+	read(filedesc, initData, initDataSize);
+	close(filedesc);
+#else
 	int filedesc = open(descfile, O_RDONLY);
 	if (filedesc == -1) {
 		LOGE("ERROR: unable to load describe file\n");
@@ -23,6 +45,7 @@ struct neven_env *neven_create(const char *descfile, int w, int h, int maxFaces)
 	}
 	int initDataSize = read(filedesc, initData, MAX_FILE_SIZE);
 	close(filedesc);
+#endif
 
 	btk_HSDK sdk = NULL;
 	btk_SDKCreateParam sdkParam = btk_SDK_defaultParam();
